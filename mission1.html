@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+
+<link rel="stylesheet" href="mission1.css"/>
+
+</head>
+<body>
+
+<form id="signupForm">
+  <h2>회원가입</h2>
+  
+  <label for="username">이름</label>
+  <input type="text" id="name" name="username" >
+  <div class="nm1 hide" style=color:red>필수 입력 항목입니다!</div>
+  <div class="nm2 hide" style=color:green>멋진 이름이네요!</div>
+
+  <label for="email">이메일</label>
+  <input type="text" id="email" name="email" >
+  <div class="em1 hide" style=color:red>올바른 이메일 형식이 아닙니다!</div>
+  <div class="em2 hide" style=color:green>올바른 이메일 형식입니다!</div>
+
+  <label for="age">나이</label>
+  <input type="text" id="age" name="age" >
+  <div class="am1 hide">나이를 입력해주세요!</div>
+  <div class="am2 hide" style=color:red>나이는 숫자 형식이어야 합니다!</div>
+  <div class="am3 hide" style=color:red>나이는 음수가 될 수 없습니다!</div>
+  <div class="am4 hide" style=color:red>나이는 소수가 될 수 없습니다!</div>
+  <div class="am5 hide" style=color:red>미성년자는 가입할 수 없습니다!</div>
+  <div class="am6 hide" style=color:red>나이는 소수가 될 수 없습니다!</div>
+  <div class="am7 hide" style=color:green>올바른 나이 형식입니다!</div>
+
+  <label for="password">비밀번호</label>
+  <input type="password" id="password" name="password" >
+  <div class="pm1 hide" style=color:green>올바른 비밀번호 입니다!</div>
+  <div class="pm2 hide" style=color:red>비밀번호는 최소 4자리 이상이어야 합니다.</div>
+  <div class="pm3 hide" style=color:red>비밀번호는 최대 12자리까지 가능합니다.</div>
+  <div class="pm4 hide" style=color:red>비밀번호는 영어, 숫자, 특수문자를 모두 조합해서 작성해야합니다.</div>
+
+  <label for="confirmPassword">비밀번호 확인</label>
+  <input type="password" id="confirmPassword" name="confirmPassword" >
+  <div class="cpm1 hide" style=color:red>비밀번호가 일치하지 않습니다.</div>
+  <div class="cpm2 hide" style=color:green>비밀번호가 일치합니다.</div>
+
+  
+
+  <input type="submit" value="가입하기">
+  
+</form>
+  
+<script src="mission1.js"></script>
+
+</body>
+</html>
